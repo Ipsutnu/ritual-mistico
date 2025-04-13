@@ -1,73 +1,154 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ritual Místico</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet" />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; }
-    header { background: linear-gradient(to right, #111, #222); padding: 2rem; text-align: center; }
-    header img.logo { max-width: 120px; margin-bottom: 1rem; }
-    header h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; }
-    header p { font-size: 1.2rem; color: #ccc; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    section.hero { padding: 4rem 2rem; text-align: center; background: #111; }
-    section.hero h2 { font-size: 2rem; margin-bottom: 1rem; }
-    section.hero p { font-size: 1.1rem; color: #aaa; margin-bottom: 2rem; }
-    section.hero img { max-width: 100%; border-radius: 16px; box-shadow: 0 0 30px rgba(255,255,255,0.1); }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: white;
+      line-height: 1.6;
+    }
 
-    section.features { display: flex; flex-wrap: wrap; justify-content: center; padding: 4rem 2rem; background-color: #0d0d0d; gap: 2rem; }
-    .feature { flex: 1 1 300px; padding: 2rem; background: #1a1a1a; border-radius: 16px; text-align: center; box-shadow: 0 0 20px rgba(255,255,255,0.05); }
-    .feature h3 { font-size: 1.5rem; margin-bottom: 1rem; }
-    .feature p { font-size: 1rem; color: #bbb; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+    }
 
-    section.cta { padding: 4rem 2rem; text-align: center; background: linear-gradient(to right, #220022, #110011); }
-    section.cta h2 { font-size: 2rem; margin-bottom: 1rem; }
-    section.cta p { font-size: 1.1rem; margin-bottom: 2rem; color: #ddd; }
-    .btn { padding: 1rem 2rem; background: #fff; color: #000; border-radius: 8px; font-weight: bold; text-decoration: none; }
-    .btn:hover { background: #ccc; }
+    header img {
+      height: 50px;
+    }
 
-    footer { padding: 2rem; text-align: center; background-color: #000; color: #777; font-size: 0.9rem; }
+    nav a {
+      margin-left: 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #a78bfa;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: url('/mnt/data/A_promotional_digital_image_for_a_digital_product_.png') no-repeat center center/cover;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: #e0e0e0;
+    }
+
+    .btn {
+      background-color: #a78bfa;
+      color: #fff;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #7c3aed;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .section img {
+      max-width: 300px;
+      margin: 2rem 0;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #d1d5db;
+    }
+
+    footer {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      color: #888;
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <img src="A_logo_for_a_mystical-themed_digital_product_or_se.png" alt="Logo" class="logo" />
-    <h1>Ritual Místico</h1>
-    <p>Uma jornada digital que eleva sua alma e desbloqueia portais ocultos de poder interior ✨</p>
+    <img src="/mnt/data/A_logo_for_a_mystical-themed_digital_product_or_se.png" alt="Ritual Místico Logo" />
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#produto">Produto</a>
+      <a href="#comprar">Comprar</a>
+    </nav>
   </header>
 
   <section class="hero">
-    <h2>Conecte-se com o invisível. Transforme sua realidade.</h2>
-    <p>Descubra o segredo dos mestres antigos em um formato moderno e imersivo.</p>
-    <img src="A_promotional_digital_image_for_a_digital_product_.png" alt="Imagem do Produto" />
+    <h1>Desperte o Místico Dentro de Você</h1>
+    <p>Um portal de transformação energética, sabedoria ancestral e poder interior — acessível com um clique.</p>
+    <a href="#comprar"><button class="btn">Quero Despertar</button></a>
   </section>
 
-  <section class="features">
-    <div class="feature">
-      <h3>🔮 Iniciação Digital</h3>
-      <p>Rituais guiados por áudio e vídeo para ativação da consciência cósmica.</p>
-    </div>
-    <div class="feature">
-      <h3>🌙 Magia Aplicada</h3>
-      <p>Ferramentas práticas para manifestar desejos, limpar energias e proteger seu campo.</p>
-    </div>
-    <div class="feature">
-      <h3>🔥 Atualizações de Poder</h3>
-      <p>Novos feitiços e ativações liberadas mensalmente para alunos avançados.</p>
-    </div>
+  <section class="section" id="sobre">
+    <h2>O que é o Ritual Místico?</h2>
+    <p>É uma jornada guiada pela sabedoria das estrelas, pela força dos arquétipos e pelo poder da intenção. Criado para ativar seus campos energéticos e alinhar você com sua missão mais elevada.</p>
+    <img src="/mnt/data/A_promotional_digital_image_for_a_digital_product_.png" alt="Ritual Místico" />
   </section>
 
-  <section class="cta">
-    <h2>Você está pronto para despertar?</h2>
-    <p>Entre para o Ritual Místico e liberte a bruxa ou mago que habita em você.</p>
-    <a href="#" class="btn">Quero Participar Agora</a>
+  <section class="section" id="produto">
+    <h2>O Produto</h2>
+    <p>Um programa digital completo com rituais, áudios de reprogramação, técnicas energéticas e um guia visual divinamente ilustrado. Ideal pra quem quer viver com propósito, magnetismo e frequência elevada.</p>
+    <img src="/mnt/data/A_logo_for_a_mystical-themed_digital_product_or_se.png" alt="Produto Místico" />
+  </section>
+
+  <section class="section" id="comprar">
+    <h2>Garanta o Seu Acesso</h2>
+    <p>O portal já está aberto. Só falta você atravessar. Adquira agora com acesso imediato e bônus exclusivos para quem age com o coração pulsando forte.</p>
+    <button class="btn">Comprar Agora</button>
   </section>
 
   <footer>
-    &copy; 2025 Ritual Místico. Todos os direitos reservados.
+    <p>&copy; 2025 Ritual Místico. Todos os direitos reservados.</p>
   </footer>
 </body>
+
 </html>
